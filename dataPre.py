@@ -84,7 +84,7 @@ device = torch.device(
     else "cpu"
 )
 trainArgs['model'] = DrugVQA(modelArgs,block = ResidualBlock).to(device)
-trainArgs['epochs'] = 1
+trainArgs['epochs'] = 15
 trainArgs['lr'] = 0.0007
 trainArgs['train_loader'] = train_loader
 trainArgs['doTest'] = True
